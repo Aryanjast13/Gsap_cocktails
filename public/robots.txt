@@ -1,0 +1,20 @@
+# Allow all bots to crawl the public content
+User-agent: *
+Allow: /
+
+# Block crawling sensitive or unnecessary files
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /static/js/
+Disallow: /static/css/
+
+# Prevent indexing of search result or error pages
+Disallow: /search
+Disallow: /404
+
+# Sitemap location (update domain)
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Host definition (optional)
+Host: https://yourdomain.com
